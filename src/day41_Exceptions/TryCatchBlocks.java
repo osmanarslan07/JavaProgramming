@@ -83,11 +83,9 @@ public class TryCatchBlocks {
 
         try {
             FileInputStream file = new FileInputStream("File path");
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         }
-
-
 
 
     }

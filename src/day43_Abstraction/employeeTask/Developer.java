@@ -5,12 +5,12 @@ public final class Developer extends Employee{
         super(name, age, gender, id, jobTitle, salary);
     }
 
-
+    @Override
     public void work() {
         System.out.println(getName()+" is developing application");
     }
 
-
+    @Override
     public void sleep() {
         System.out.println(getName()+ " sleeps 7 hours");
     }

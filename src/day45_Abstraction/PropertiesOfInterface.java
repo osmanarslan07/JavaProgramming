@@ -29,9 +29,10 @@ public interface PropertiesOfInterface {
 
     public abstract void method3(); // abstract method will have different bodies in different classes
 
-    default void method(){ // if the body will be the same for all the classes
+    default void method4(){ // if the body will be the same for all the classes
         System.out.println("Default method");
     }
+
 
 
 }

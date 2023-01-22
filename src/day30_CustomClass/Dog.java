@@ -1,6 +1,8 @@
 package day30_CustomClass;
 
-public class Dog {
+import day36_Inheritance.animalTask.Animal;
+
+public class Dog extends Animal {
 
     public String name;
     public String breed;

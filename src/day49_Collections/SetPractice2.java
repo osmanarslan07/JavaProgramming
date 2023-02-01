@@ -1,5 +1,8 @@
 package day49_Collections;
 
+import day43_Abstraction.employeeTask.Teacher;
+
+import java.beans.beancontext.BeanContext;
 import java.util.*;
 
 public class SetPractice2 {
@@ -75,6 +78,19 @@ public class SetPractice2 {
         }
 
         System.out.println(result);
+
+        System.out.println("--------------------------------------");
+
+        Set<String> names = new LinkedHashSet<>();
+        names.addAll(Arrays.asList("Ahmet", "Ahmet", "John","James","Breanna", "Shay","Ahmet"));
+
+        System.out.println(names.toArray(new String[0])[2]);
+
+        System.out.println(new ArrayList<>(names).get(4));
+
+        for (String each : names){
+            System.out.println(each);
+        }
 
     }
 

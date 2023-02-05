@@ -7,10 +7,10 @@ public class MapMethods {
 
 
     public static void main(String[] args) {
+        //student name & score
 
         Map<String, Integer> students = new HashMap<>();
 
-        //student name & score
         students.put("Aygun", 85);
         students.put("Maria", 86);
         students.put("Ali", 95);

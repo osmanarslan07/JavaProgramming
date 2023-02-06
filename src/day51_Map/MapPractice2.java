@@ -46,6 +46,45 @@ public class MapPractice2 {
         System.out.println(name1 + " has the max salary which is " + maxSalary);
         System.out.println("name2 = " + name2);
 
+        System.out.println("-----------------------------------------------");
+
+        //1.3 how many employees has the salary between 120k ~ 150K?
+
+        int count =0;
+
+        for (Integer each : map.values()) {
+            if (each<=150000 && each>= 120000){
+                count++;
+            }
+        }
+
+        System.out.println(count);
+
+        System.out.println("-----------------------------------------");
+
+        // 1.4 display the names of the employees who are making less than 118k?
+
+        for (Map.Entry<String, Integer> pairs : map.entrySet()) {
+            if (pairs.getValue()< 118000){
+                System.out.println(pairs.getKey());
+            }
+        }
+
+        System.out.println("-----------------------------------------");
+
+        //1.5 increase the salary of each employee by 10K if the current salary is less than 120K
+
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            if (pair.getValue()<120000){
+                pair.setValue(pair.getValue()+10000);
+            }
+        }
+
+        System.out.println(map);
+
+        System.out.println(count);
+
+
 
 
 
